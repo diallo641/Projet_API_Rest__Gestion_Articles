@@ -11,5 +11,8 @@ app.use(express.urlencoded({extended:false}));
 //Appelle de la fonction connexion
 connexionBaseDonnee();
 
+//Utilser les routes
+app.use("/API", require('./routes/personne'));
+
 //ecouteur du serveur
 app.listen(port , () => console.log("le serveur pour l'API des articles a demaré au port N° : " + port));
