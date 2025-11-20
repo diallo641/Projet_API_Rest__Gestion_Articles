@@ -1,4 +1,4 @@
-const personneModel = require('../models/personne');
+const personneModel = require('../models/personne.js');
 const mongoose= require('mongoose');
 
 //Ajouter une personne
